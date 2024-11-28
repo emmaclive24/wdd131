@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Weather Display" />
+    <meta name="author" content="Clive Tumbare" />
+    <title>Weather Display - Victoria Falls</title>
+    <link rel="stylesheet" href="styles/place.css" />
+    <script defer src="scripts/place.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Victoria Falls</h1>
+    </header>
+    <main>
+      <div class="hero">
+        <picture>
+          <source
+            srcset="images/falls_desktop.webp"
+            media="(min-width: 1300px)"
+          />
+          <img
+            src="images/falls_mobile.webp"
+            alt="Beautiful Victoria Falls "
+            class="hero-image"
+          />
+        </picture>
+        <div class="hero-overlay">
+          <section class="weather">
+            <h2>
+              Weather<img src="images/weather-icon.svg" alt="Weather Icon" />
+            </h2>
+            <p>Temperature: <span id="temperature">28°C</span></p>
+            <p>Wind Speed: <span id="windSpeed">18 km/h</span></p>
+            <p>Wind Chill: <span id="windChill">Calculating...</span></p>
+          </section>
+        </div>
+        <div class="data-overlay">
+          <h2>Data</h2>
+          <p><b>Area:</b> 7,7579,974 km2</p>
+          <p><b>Population:</b> 15,345,789</p>
+          <p><b>Capital:</b> Harare</p>
+          <p><b>Official Languages:</b> English , Shona</p>
+          <p><b>Currency:</b> Usd</p>
+          <p><b>Time Zone:</b> UTC/GMT +2 Hours</p>
+          <p><b>Code:</b> +263</p>
+          <p><b>Internet TLD:</b> zim</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© <span id="currentyear"></span> Clive Tumbare - Idaho</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
