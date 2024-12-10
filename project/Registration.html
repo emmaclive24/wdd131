@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High School Registration Form</title>
+    <link rel="stylesheet" href="styles/reg.css" />
+    <link rel="icon" type="image/x-icon" href="/images/school-logo.png">
+  </head>
+  <body>
+    <div class="container">
+      <h2>High School Registration Form</h2>
+      <form action="/submit_registration" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required />
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="subjects">Choose Your Subjects:</label>
+        <select id="subjects" name="subjects[]" multiple required>
+          <option value="mathematics">Mathematics</option>
+          <option value="science">Science</option>
+          <option value="history">History</option>
+          <option value="english">English</option>
+          <option value="art">Art</option>
+          <option value="physical_education">Physical Education</option>
+        </select>
+
+        <label for="sports">Choose Your Sports:</label>
+        <select id="sports" name="sports[]" multiple required>
+          <option value="soccer">Soccer</option>
+          <option value="basketball">Basketball</option>
+          <option value="tennis">Tennis</option>
+          <option value="swimming">Swimming</option>
+          <option value="athletics">Athletics</option>
+        </select>
+
+        <label for="residence">Residence:</label>
+        <select id="residence" name="residence" required>
+          <option value="boarding">Boarding</option>
+          <option value="day">Day</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <footer>
+      <p id="current-time"></p>
+    </footer>
+    <script src="script/reg.js" defer></script>
+  </body>
+</html>
