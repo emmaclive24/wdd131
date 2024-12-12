@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clive College - Registration</title>
+    <link rel="stylesheet" href="styles/final.css" />
+    <link rel="icon" type="image/x-icon" href="images/school-logo.png" />
+    <script src="script/final.js" defer></script>
+    <link rel="shortcut icon" href="images/school-logo.png" type="image/x-icon">
+  </head>
+  <body style="background-image: url(images/pexelbook.jpg);background-size: cover; background-position: center; background-repeat: no-repeat; height: 100%;margin: 0;">
+    <!-- Header Section -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#home">Clive College</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#apply" class="apply-button">Apply Now</a>
+      </nav>
+    </header>
+
+    <!-- Registration Form Section -->
+    <section class="registration-section">
+      <div class="container">
+        <h2>High School Registration Form</h2>
+        <form action="/submit_registration" method="post">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" required />
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" required />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="gender">Gender:</label>
+          <div class="gender-options">
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" rows="4" required></textarea>
+
+          <label for="subjects">Choose Your Subjects:</label>
+          <select id="subjects" name="subjects[]" multiple required>
+            <option value="mathematics">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <option value="english">English</option>
+            <option value="art">Art</option>
+            <option value="physical_education">Physical Education</option>
+          </select>
+
+          <label for="sports">Choose Your Sports:</label>
+          <select id="sports" name="sports[]" multiple required>
+            <option value="soccer">Soccer</option>
+            <option value="basketball">Basketball</option>
+            <option value="tennis">Tennis</option>
+            <option value="swimming">Swimming</option>
+            <option value="athletics">Athletics</option>
+          </select>
+
+          <label for="residence">Residence:</label>
+          <select id="residence" name="residence" required>
+            <option value="boarding">Boarding</option>
+            <option value="day">Day</option>
+          </select>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Clive College</h3>
+          <p>
+            Empowering students to shape their future through excellence in
+            education and a nurturing environment.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#registration">Registration</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Email: info@clivecollege.edu</p>
+          <p>Phone: +263 773 087 276CLIVE</p>
+          <p>Address: 234 Joshua Nqabuko Main street , Bulawayo</p>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><img src="images/whatsapp_733585.png" alt="Facebook" /></a>
+            <a href="#"><img src="images/instagram_2111463.png" alt="Twitter" /></a>
+            <a href="#"><img src="images/facebook_5968764.png" alt="Instagram" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Clive College. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

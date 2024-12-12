@@ -1,0 +1,45 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #003366;
+  padding: 1rem;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.admissions-section {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.admissions-section h2 {
+  margin-bottom: 1rem;
+}
+
+.admissions-section ol {
+  margin: 1rem auto;
+  max-width: 600px;
+  text-align: left;
+  padding-left: 1rem;
+}

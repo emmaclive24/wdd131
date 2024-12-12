@@ -3,71 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>High School Registration Form</title>
-    <link rel="stylesheet" href="styles/reg.css" />
-    <link rel="icon" type="image/x-icon" href="/images/school-logo.png">
+    <title>Advanced College Registration Form</title>
+    <link rel="stylesheet" href="registration.css" />
+    <link
+      rel="shortcut icon"
+      href="images/school-logo.png"
+      type="image/x-icon"
+    />
   </head>
-  <body>
+  <body
+    style="
+      background-image: url(images/pexelbook.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+      margin: 0;
+    "
+  >
     <div class="container">
-      <h2>High School Registration Form</h2>
-      <form action="/submit_registration" method="post">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" required />
+      <aside class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+          <li><a href="#personal-info">Personal Information</a></li>
+          <li><a href="#academic-info">Academic Information</a></li>
+          <li><a href="#course-selection">Course Selection</a></li>
+          <li><a href="#submit-section">Submit</a></li>
+        </ul>
+      </aside>
+      <main class="content">
+        <h1>College Registration Form</h1>
+        <form id="registration-form">
+          <section id="personal-info">
+            <h2>Personal Information</h2>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required />
 
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" required />
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required />
 
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required />
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
 
-        <label for="gender">Gender:</label>
-        <input type="radio" id="male" name="gender" value="male" required />
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label>
-        <input type="radio" id="other" name="gender" value="other" />
-        <label for="other">Other</label>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <section id="academic-info">
+            <h2>Academic Information</h2>
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" required />
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required />
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+              <option value="">Select</option>
+              <option value="cs">Computer Science</option>
+              <option value="eng">Engineering</option>
+              <option value="bus">Business</option>
+              <option value="arts">Arts</option>
+              <option value="sci">Sciences</option>
+            </select>
 
-        <label for="address">Address:</label>
-        <textarea id="address" name="address" rows="4" required></textarea>
+            <label for="year">Year:</label>
+            <select id="year" name="year" required>
+              <option value="">Select</option>
+              <option value="1">1st Year</option>
+              <option value="2">2nd Year</option>
+              <option value="3">3rd Year</option>
+              <option value="4">4th Year</option>
+            </select>
+          </section>
 
-        <label for="subjects">Choose Your Subjects:</label>
-        <select id="subjects" name="subjects[]" multiple required>
-          <option value="mathematics">Mathematics</option>
-          <option value="science">Science</option>
-          <option value="history">History</option>
-          <option value="english">English</option>
-          <option value="art">Art</option>
-          <option value="physical_education">Physical Education</option>
-        </select>
+          <section id="course-selection">
+            <h2>Course Selection</h2>
+            <label for="courses">Select Courses:</label>
+            <select id="courses" name="courses[]" multiple required>
+              <option value="cs101">CS 101</option>
+              <option value="eng202">ENG 202</option>
+              <option value="bus303">BUS 303</option>
+              <option value="art404">ART 404</option>
+              <option value="sci505">SCI 505</option>
+            </select>
+          </section>
 
-        <label for="sports">Choose Your Sports:</label>
-        <select id="sports" name="sports[]" multiple required>
-          <option value="soccer">Soccer</option>
-          <option value="basketball">Basketball</option>
-          <option value="tennis">Tennis</option>
-          <option value="swimming">Swimming</option>
-          <option value="athletics">Athletics</option>
-        </select>
-
-        <label for="residence">Residence:</label>
-        <select id="residence" name="residence" required>
-          <option value="boarding">Boarding</option>
-          <option value="day">Day</option>
-        </select>
-
-        <input type="submit" value="Submit" />
-      </form>
+          <section id="submit-section">
+            <input type="submit" value="Submit" />
+          </section>
+        </form>
+      </main>
     </div>
     <footer>
       <p id="current-time"></p>
     </footer>
-    <script src="script/reg.js" defer></script>
+    <script src="registration.js"></script>
   </body>
 </html>
