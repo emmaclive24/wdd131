@@ -3,39 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clive College - Registration</title>
+    <title>Clive College - Official Website</title>
     <link rel="stylesheet" href="styles/final.css" />
     <link rel="icon" type="image/x-icon" href="images/school-logo.png" />
     <script src="script/final.js" defer></script>
-    <link rel="shortcut icon" href="images/school-logo.png" type="image/x-icon">
   </head>
-  <body style="background-image: url(images/pexelbook.jpg);background-size: cover; background-position: center; background-repeat: no-repeat; height: 100%;margin: 0;">
+  <body
+    style="
+      background-image: url(images/pexelbook.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+    "
+  >
     <!-- Header Section -->
-    <header class="header">
+    <header class="header crimson-bg">
       <nav class="navbar">
         <div class="logo">
           <a href="#home">Clive College</a>
         </div>
-        <div class="menu-toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-          <li><a href="programs.html">Programs</a></li>
-          <li><a href="registration.html">Registration</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#registration">Registration</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#apply" class="apply-button">Apply Now</a>
       </nav>
     </header>
 
-    <!-- Registration Form Section -->
-    <section class="registration-section">
-      <div class="container">
+    <!-- Main Content -->
+    <main>
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#sports">Sports</a></li>
+          <li><a href="#awards">Award Winners</a></li>
+          <li><a href="#graduation">Graduation Day</a></li>
+          <li><a href="#leavers">School Leavers' Party</a></li>
+          <li><a href="#results">Results</a></li>
+        </ul>
+      </aside>
+
+      <!-- Events Section -->
+      <section id="events" class="events-section">
+        <h2>School Events</h2>
+        <div class="events-gallery">
+          <div class="event-item">
+            <img src="images/sports.jpg" alt="Sports Day" loading="lazy" />
+            <p>Sports Day</p>
+          </div>
+          <div class="event-item">
+            <img src="images/awards.jpg" alt="Award Winning" loading="lazy" />
+            <p>Award Winning</p>
+          </div>
+          <div class="event-item">
+            <img
+              src="images/graduation.jpg"
+              alt="Graduation Day"
+              loading="lazy"
+            />
+            <p>Graduation Day</p>
+          </div>
+          <div class="event-item">
+            <img
+              src="images/leavers.jpg"
+              alt="School Leavers' Party"
+              loading="lazy"
+            />
+            <p>School Leavers' Party</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration Form Section -->
+      <section id="registration" class="registration-section">
         <h2>High School Registration Form</h2>
         <form action="/submit_registration" method="post">
           <label for="fname">First Name:</label>
@@ -93,8 +139,63 @@
 
           <input type="submit" value="Submit" />
         </form>
-      </div>
-    </section>
+      </section>
+
+      <!-- Results Section -->
+      <section id="results" class="results-section">
+        <h2>College Results by Faculty</h2>
+        <div class="table-container">
+          <table class="results-table">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Science (%)</th>
+                <th>Arts (%)</th>
+                <th>Business (%)</th>
+                <th>Engineering (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2019</td>
+                <td>78</td>
+                <td>82</td>
+                <td>74</td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <td>2020</td>
+                <td>81</td>
+                <td>79</td>
+                <td>77</td>
+                <td>88</td>
+              </tr>
+              <tr>
+                <td>2021</td>
+                <td>84</td>
+                <td>85</td>
+                <td>79</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>2022</td>
+                <td>87</td>
+                <td>83</td>
+                <td>82</td>
+                <td>92</td>
+              </tr>
+              <tr>
+                <td>2023</td>
+                <td>89</td>
+                <td>86</td>
+                <td>85</td>
+                <td>94</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -118,15 +219,21 @@
         <div class="footer-section">
           <h4>Contact Us</h4>
           <p>Email: info@clivecollege.edu</p>
-          <p>Phone: +263 773 087 276CLIVE</p>
-          <p>Address: 234 Joshua Nqabuko Main street , Bulawayo</p>
+          <p>Phone: +263 773 087 276</p>
+          <p>Address: 234 Joshua Nqabuko Main Street, Bulawayo</p>
         </div>
         <div class="footer-section">
           <h4>Follow Us</h4>
           <div class="social-links">
-            <a href="#"><img src="images/whatsapp_733585.png" alt="Facebook" /></a>
-            <a href="#"><img src="images/instagram_2111463.png" alt="Twitter" /></a>
-            <a href="#"><img src="images/facebook_5968764.png" alt="Instagram" /></a>
+            <a href="#"
+              ><img src="images/whatsapp_733585.png" alt="WhatsApp"
+            /></a>
+            <a href="#"
+              ><img src="images/instagram_2111463.png" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="images/facebook_5968764.png" alt="Facebook"
+            /></a>
           </div>
         </div>
       </div>
@@ -134,7 +241,5 @@
         <p>&copy; 2024 Clive College. All Rights Reserved.</p>
       </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
